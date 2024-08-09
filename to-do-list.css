@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 20px;
+
+}
+body{
+background:linear-gradient(135deg, rgb(19, 49, 138), rgb(135, 65, 168));
+ 
+}
+.container{
+    max-width: 32%;
+    max-height: 500px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 20px;
+    overflow-y: auto;  
+
+}
+
+                            /* -----LOGO----- */
+.container .logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+.container .logo img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: unset;
+}
+.container .logo h1{
+    font-size: 25px;
+    margin-bottom: unset; 
+
+}
+                            /* -----ADD-TASK----- */
+.container .task-add{
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(184, 182, 180);
+    width: 100%;
+    
+}
+.container input{
+    border: none;
+    outline: none; 
+    border-radius: 20px;
+    width: 230px;
+    height: 40px;
+    padding: 20px;
+    background: transparent; 
+    margin-bottom: unset;  
+}
+.container .task-add button{
+    border: none;
+    outline: none; 
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    background-color: #f14e90;
+    margin-bottom: unset;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+} 
+
+                            /* -----NEW-ELEMENT----- */
+
+i, p{
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 0px;
+} 
+.new-par{
+    display: flex;
+    justify-content: space-between;
+}
+.new-par div{
+    display: flex;
+}
+
+
+                            /* -----SCROLL-BAR----- */
+.container::-webkit-scrollbar{
+    width: 13px;
+    height: 100%;
+
+}
+.container::-webkit-scrollbar-track{
+    background-color: #f14e90;
+    border-radius: 20px;
+}
+.container::-webkit-scrollbar-thumb{
+    background:linear-gradient(#6c0832,#d81d6b,#510553);
+    border-radius: 20px;
+}
+
+
+/* Media query for small screens */
+/* @media(max-width: 500px) {
+    .container {
+        width: 100%; 
+    }
+
+    .container .logo h1 {
+        font-size: 22px;
+    }
+
+    .container input { 
+        padding: 15px;
+    }
+
+    .container .task-add button {
+        width: 90px; 
+    }
+
+    .new-par {
+        gap: 15px;
+    }  
+}    
+
+@media(max-width: 700px) {
+    
+    .container {
+        max-width: 50%;
+        padding: 25px;
+    }
+
+    .container .logo h1 {
+        font-size: 22px;
+    }
+
+    .container input {
+        padding: 15px;
+    }
+
+    .container .task-add button {
+        width: 90px; 
+    }
+
+    .new-par {
+        gap: 15px;
+    }
+}
+
+@media(max-width: 1029px) {
+    
+    .container {
+        max-width: 40%;
+        padding: 25px;
+    }
+    .container input {
+        width: calc(100% - 90px); 
+        padding: 15px;
+    }
+
+    .container .task-add button {
+        width: 90px; 
+    } 
+} */
+ 
+@media(max-width:1030px){
+    .container{
+        max-width: 40%;}
+        .container input {
+            width: calc(100% - 90px); 
+            padding: 15px;
+        }
+        .container .task-add button {
+            width: 90px; 
+        }  
+        
+}
+ 
+@media(max-width:700px){
+    .container{
+        max-width: 50%;}
+        .container input {
+            width: calc(100% - 90px); 
+            padding: 15px;
+        }
+        .container .task-add button {
+            width: 90px; 
+        }  
+        
+}
+
+@media(max-width:585px){
+    .container{
+        max-width:60%;}
+        .container input {
+            width: calc(100% - 90px); 
+            padding: 15px;
+        }
+        .container .task-add button {
+            width: 90px; 
+        }  
+        
+}
+@media(max-width:540px){
+    .container{
+        max-width:70%;}
+        .container input {
+            width: calc(100% - 90px); 
+            padding: 15px;
+        }
+        .container .task-add button {
+            width: 90px; 
+        }      
+        
+}
+
+@media(max-width:370px){
+    .container{
+        max-width:100%;}
+        .container input {
+            width: calc(100% - 90px); 
+            padding: 15px;
+        }
+        .container .task-add button {
+            width: 90px; 
+        }     
+        
+}
+     
